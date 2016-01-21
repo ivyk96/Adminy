@@ -1,1 +1,39 @@
-﻿
+﻿body {
+    font-family: Calibri;
+    margin-left: 15px;
+}
+
+h1 {
+    margin: 0px;
+    margin-left: -5px;
+    font-size: 80px;
+    color: #1f628d;
+    font-weight: bold;
+}
+
+input {
+    width: 125px;
+}
+
+.btn {
+  color: #ffffff;
+  font-size: 20px;
+  background: #1f628d;
+  margin-top: 10px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: none;
+}
+
+.btn:hover {
+  background: #3498db;
+  text-decoration: none;
+}
+
+.errormsg{
+    color: red;
+}
+
+.errormsg ul{
+    margin-bottom: 10px;
+}

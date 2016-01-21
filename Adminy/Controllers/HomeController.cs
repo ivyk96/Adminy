@@ -23,7 +23,13 @@ namespace Adminy
             _db.Data.Add(data);
             _db.SaveChanges();
 
-            return RedirectToAction("Index", new { id = data.Id});
+            return RedirectToAction("Overview");
+        }
+
+        public ActionResult Overview()
+        {
+            var Data = _db.Data;
+            return View(Data);
         }
     }
 }

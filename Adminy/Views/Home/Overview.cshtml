@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "Adminy - Overview";
+}
+
+<h1>Overview</h1>
+<p>Here you have an overview of all the dates you have entered</p>
+<ul>
+    @foreach (var Date in Model)
+    {
+        <li>Filed on: @Date.Date</li>
+    }
+</ul>
