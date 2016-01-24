@@ -9,8 +9,6 @@ namespace Adminy
         public int Id { get; set; }
 
         [Required(ErrorMessage="Please enter a valid date")]
-        [DisplayName("Date ")]
-        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy hh:mm:tt}")]
         public DateTime Date { get; set; }
 
         //public DateTime Start { get; set; }

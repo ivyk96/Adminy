@@ -5,8 +5,8 @@
 <h1>Overview</h1>
 <p>Here you have an overview of all the dates you have entered</p>
 <ul>
-    @foreach (var Date in Model)
+    @foreach (var Data in Model)
     {
-        <li>Filed on: @Date.Date</li>
+        <li>Filed on: @Data.Date.Day - @Data.Date.Month - @Data.Date.Year</li>
     }
 </ul>
