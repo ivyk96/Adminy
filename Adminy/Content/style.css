@@ -1,8 +1,35 @@
 ﻿body {
     font-family: Calibri;
-    margin-left: 15px;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
+/* Navbar */
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1f628d;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #3498db;
+}
+
+/* Text */
 h1 {
     margin: 0px;
     margin-left: -5px;
@@ -11,10 +38,12 @@ h1 {
     font-weight: bold;
 }
 
+/* Input fields */
 input {
     width: 125px;
 }
 
+/* Submit button */
 .btn {
   color: #ffffff;
   font-size: 20px;
@@ -30,6 +59,7 @@ input {
   text-decoration: none;
 }
 
+/* Errormessage */
 .errormsg{
     color: red;
 }
