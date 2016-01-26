@@ -9,6 +9,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    margin-right: 10px;
     overflow: hidden;
     background-color: #1f628d;
 }
@@ -39,8 +40,26 @@ h1 {
 }
 
 /* Input fields */
-input {
-    width: 125px;
+.form {
+    width: 250px;
+}
+
+.form tr {
+    height: 30px;
+}
+
+/* Overview table */
+.overview {
+}
+
+.overview th {
+    font-weight: bold;
+}
+
+.overview th, td {
+    padding: 0px 20px 10px 0px;
+    padding-left: 0px;
+    text-align: left;
 }
 
 /* Submit button */

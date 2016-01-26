@@ -4,7 +4,7 @@ namespace Adminy
 {
     public class HomeController : Controller
     {
-        private DataContext _db = new DataContext();
+        private AdminyContext _db = new AdminyContext();
 
         // GET: Home
         public ActionResult Index()
@@ -13,14 +13,14 @@ namespace Adminy
         }
 
         [HttpPost]
-        public ActionResult Index(Data data)
+        public ActionResult Index(Shift data)
         {
             if (!ModelState.IsValid)
             {
                 return View(data);
             }
 
-            _db.Data.Add(data);
+            _db.Shift.Add(data);
             _db.SaveChanges();
 
             return RedirectToAction("Overview");
@@ -28,7 +28,7 @@ namespace Adminy
 
         public ActionResult Overview()
         {
-            var Data = _db.Data;
+            var Data = _db.Shift;
             return View(Data);
         }
     }

@@ -98,7 +98,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Images\adminy.ico" />
-    <Content Include="Content\Images\favicon.ico" />
     <Content Include="Content\reset.css" />
     <Content Include="Content\style.css" />
     <Content Include="Global.asax" />
@@ -111,8 +110,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\Data.cs" />
-    <Compile Include="Models\DataContext.cs" />
+    <Compile Include="Models\Shift.cs" />
+    <Compile Include="Models\AdminyContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

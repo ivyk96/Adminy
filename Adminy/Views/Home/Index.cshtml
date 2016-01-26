@@ -1,5 +1,5 @@
 ﻿@{
-    @model Data
+    @model Shift
     ViewBag.Title = "Adminy - Home";
 }
 
@@ -9,12 +9,19 @@
     <div class="errormsg">
         @Html.ValidationSummary()
     </div>
-    
-    <p>
-        @Html.LabelFor(m => m.Date)
-        <input type="date" name="date">
-    </p>
-    <p>
-        <input type="submit" value="Submit" class="btn">
-    </p>
+    <table class="form">
+        <tr>
+            <td>
+                @Html.LabelFor(m => m.Date)
+            </td>
+            <td>
+                <input type="date" name="date">
+            </td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(m => m.Start)</td>
+            <td>@Html.TextBoxFor(m => m.Start)</td>
+        </tr>
+    </table>
+    <input type="submit" value="Submit" class="btn">
 </form>

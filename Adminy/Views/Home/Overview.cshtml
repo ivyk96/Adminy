@@ -3,10 +3,22 @@
 }
 
 <h1>Overview</h1>
-<p>Here you have an overview of all the dates you have entered</p>
-<ul>
-    @foreach (var Data in Model)
-    {
-        <li>Filed on: @Data.Date.Day - @Data.Date.Month - @Data.Date.Year</li>
-    }
-</ul>
+<p>Here you have an overview of all the data you have entered:</p>
+<br />
+<table class="overview">
+    <tr>
+        <th>Day</th>
+        <th>Month</th>
+        <th>Year</th>
+        <th>Start</th>
+    </tr>
+        @foreach (var Shift in Model)
+        {
+            <tr>
+                <td>@Shift.Date.Day</td>
+                <td>@Shift.Date.Month</td>
+                <td>@Shift.Date.Year</td>
+                <td>@Shift.Start</td>
+            </tr>
+        }
+</table>

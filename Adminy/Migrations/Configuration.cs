@@ -2,14 +2,14 @@ namespace Adminy.Migrations
 {
     using System.Data.Entity.Migrations;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<Adminy.DataContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<Adminy.AdminyContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
         }
 
-        protected override void Seed(Adminy.DataContext context)
+        protected override void Seed(Adminy.AdminyContext context)
         {
             //  This method will be called after migrating to the latest version.
 
