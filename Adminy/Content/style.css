@@ -1,5 +1,8 @@
 ﻿body {
     font-family: Calibri;
+}
+
+.body-content {
     margin-left: 10px;
     margin-top: 10px;
 }
@@ -9,7 +12,6 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    margin-right: 10px;
     overflow: hidden;
     background-color: #1f628d;
 }
@@ -41,7 +43,7 @@ h1 {
 
 /* Input fields */
 .form {
-    width: 250px;
+    width: 125px;
 }
 
 .form tr {

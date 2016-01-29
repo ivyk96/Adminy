@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace Adminy
@@ -8,9 +9,14 @@ namespace Adminy
         public int Id { get; set; }
 
         [Required(ErrorMessage="Please enter a valid date")]
-        public DateTime Date { get; set; }
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
+        public DateTime? Date { get; set; }
 
         [Required(ErrorMessage = "Please enter a valid time")]
         public string Start { get; set; }
+
+        [Required(ErrorMessage = "Please enter a valid time")]
+        public string End { get; set; }
     }
 }

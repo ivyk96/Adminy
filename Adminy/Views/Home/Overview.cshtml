@@ -11,6 +11,7 @@
         <th>Month</th>
         <th>Year</th>
         <th>Start</th>
+        <th>End</th>
     </tr>
         @foreach (var Shift in Model)
         {
@@ -19,6 +20,7 @@
                 <td>@Shift.Date.Month</td>
                 <td>@Shift.Date.Year</td>
                 <td>@Shift.Start</td>
+                <td>@Shift.End</td>
             </tr>
         }
 </table>
