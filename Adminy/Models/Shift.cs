@@ -7,15 +7,15 @@ namespace Adminy
     {
         public int Id { get; set; }
 
-        [Required(ErrorMessage="Please enter a valid date")]
+        [Required(ErrorMessage = "Please enter a valid date")]
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
         public DateTime? Date { get; set; }
 
         [Required(ErrorMessage = "Please enter a valid time")]
-        public string Start { get; set; }
+        public TimeSpan Start { get; set; }
 
         [Required(ErrorMessage = "Please enter a valid time")]
-        public string End { get; set; }
+        public TimeSpan End { get; set; }
     }
 }

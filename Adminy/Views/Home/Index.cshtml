@@ -16,13 +16,28 @@
         </tr>
         <tr>
             <td>@Html.LabelFor(m => m.Start)</td>
-            <td>@Html.TextBoxFor(m => m.Start)</td>
+            <td>@Html.EditorFor(m => m.Start)</td>
         </tr>
         <tr>
             <td>@Html.LabelFor(m => m.End)</td>
-            <td>@Html.TextBoxFor(m => m.End)</td>
+            <td>@Html.EditorFor(m => m.End)</td>
         </tr>
         
     </table>
     <input type="submit" value="Submit" class="btn">
 </form>
+<script>
+    addKeypress("#Start");
+    addKeypress("#End");
+
+    function addKeypress(selector) {
+        $(selector).keypress(function () {
+            if ($(this).val().length == 2) {
+                $(this).val($(this).val() + ":");
+            }
+            if (this.value.length > 4) {
+                this.value = this.value.slice(0, 4);
+            }
+        });
+    }
+</script>
